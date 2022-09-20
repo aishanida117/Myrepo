@@ -30,10 +30,11 @@ jobs:
    
    
    
-    STAGI:
+    QA:
       # Type of runner  that the job will run on 
    run-on: ubuntu-latest
-   environment: DEV
+   environment: QA
+   needs: DEV
    
    Steps:
    
@@ -46,10 +47,11 @@ jobs:
    
    
    
-    P:
+    PROD:
       # Type of runner  that the job will run on 
    run-on: ubuntu-latest
-   environment: DEV
+   environment: PROD
+   needs: QA
    
    Steps:
    
