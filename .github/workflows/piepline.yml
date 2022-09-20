@@ -14,8 +14,13 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   
-  
-  DEv:
+ DEV:
       # Type of runner  that the job will run on 
    run-on: ubuntu-latest
-   environment: 
+   environment: DEV
+   
+   Steps:
+   
+   #steps required for perform task include in a job 
+   -usese:
+   
