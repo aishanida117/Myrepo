@@ -30,7 +30,7 @@ jobs:
    
    
    
-    DEV:
+    STAGI:
       # Type of runner  that the job will run on 
    run-on: ubuntu-latest
    environment: DEV
@@ -44,4 +44,19 @@ jobs:
    run: |
    echo : "Im running job in dev environment"
    
+   
+   
+    P:
+      # Type of runner  that the job will run on 
+   run-on: ubuntu-latest
+   environment: DEV
+   
+   Steps:
+   
+   #steps required for perform task include in a job 
+   -uses: action.checkout/@v2
+   
+   -name: run a script
+   run: |
+   echo : "Im running job in dev environment"
    
